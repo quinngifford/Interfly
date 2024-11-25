@@ -1,5 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background: white; /* Black to green gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +49,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.App-navbar-left {
+  padding-left: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.App-navbar-right {
+  padding-right: 40px;
+  color: white;
+  font-size: 20px;
 }
